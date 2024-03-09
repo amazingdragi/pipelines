@@ -7,9 +7,9 @@ trigger:
 - main
 
 pool:
+name: Default
   vmImage: ubuntu-latest
-  demands:
-  - Agent.Name -equals 'Docker Agent - Linux'
+  
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
