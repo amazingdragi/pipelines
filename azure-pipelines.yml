@@ -15,5 +15,5 @@ stages:
     jobs:
       - job:  Install
         steps:
-          - bash: apt-get update
-            displayName: 'Upate the repo'
+          - script: apt-get install powershell
+            displayName: 'Installing Powershell'
